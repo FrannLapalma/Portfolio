@@ -1,0 +1,70 @@
+<header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" class="col" href="#">
+            <img src="https://yt3.ggpht.com/9upo5zbtXzvItj8IMHF1X9hI95x4YOeGCApLk1DhMQCHftmJvf2GWmbJXrC1TKCrn-AyQ2txBw=s900-c-k-c0x00ffffff-no-rj" alt="Logo Argentina Programa" width="10%">
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" class="col">
+            </span>
+        </button>
+        <div class="collapse navbar-collapse" class="col" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Experiencia</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Proyectos</a>
+                </li>
+                <li class="nav-item" >
+                    <a class="nav-link" href="#">Contacto</a>
+                </li>
+                <app-login></app-login>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col">
+                <img class="banner img-fluid" [src]="miPortfolio.backImagen" alt="Banner">
+            </div>
+        </div>
+        <section>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-2">      
+                    <div class="avatar-card">            
+                        <img class="avatar-imagen" [src]="miPortfolio.persona.sobremi" alt="Foto Perfil Franco Lapalma"/>
+                    </div>
+                </div>
+                <div class="col-md-6" id="Perfil">
+                    <div class="card-body-perfil">
+                        <h3 class="card-title">{{miPortfolio.persona.nombre}} {{miPortfolio.persona.apellido}}
+                        </h3>
+                        <p class="card-text">{{miPortfolio.persona.perfil}}                            
+                        </p>
+                        <p class="card-text">
+                            <small>{{miPortfolio.persona.domicilio}}</small> 
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4 justify-content-between align-items-center">
+                    <div class="card-text">
+                        <div class="item-card">
+                            <img class="item-imagen" [src]="miPortfolio.persona.imagen" alt="">
+                        </div>
+                    </div>
+                    <div class="card-text">
+                        <div class="item-card">
+                            <img class="item-imagen" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="">
+                        </div>
+                    </div>
+                    <button class="btn btn-primary">Subscribite al newsletter
+                    </button>
+                </div>
+            </div>
+        </section>             
+    </div>
+</header>

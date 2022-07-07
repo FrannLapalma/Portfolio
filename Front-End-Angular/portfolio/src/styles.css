@@ -1,6 +1,75 @@
 body {
-    background-color:floralwhite;
-    padding: 5em;
-    margin: 10em;
+    background-color: gainsboro;
+    padding: 5px;
+    margin: 5px;
+}
+.container-fluid {
+    background-color: whitesmoke;
+    border-radius: 5%;
+    border: solid gray 1px;
+    padding: 1em;
+    margin: 1em;
+}
+.row {
+    margin: auto;
+    display: flex;
+}
+.banner{
+    background-size: 25%;
+    background-image: element(section);
     
+}
+.img-fluid {
+    border-radius: 10%;
+    max-width: 50%;
+}
+.avatar-card {
+    border-radius: 50%;
+    height: 10em;
+    width: 10em;
+}
+.avatar-imagen {
+        border-radius: 50%;
+        height: 100%;
+        width: 100%;
+}
+.row {
+    justify-content: center;
+    margin:5px;
+    padding: 5px;
+}
+.card-body-perfil{
+    justify-content: center;
+    margin-top: 5px;
+    padding: 3px;
+}
+.card-text {
+    margin: 3px;
+    padding:  3px;
+}
+.item-card{
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    margin: 3px;
+    padding:  3px;
+}
+.item-imagen{
+    border-radius: 50%;
+    height: 100%;
+    width: 100%;
+    margin: 3px;
+    padding:  3px;
+}
+.institucion-card {
+    border-radius: 50%;
+    height: 10em;
+    width: 10em;
+    margin: 0px;
+    padding: 0px;
+}
+.institucion-imagen {
+        border-radius: 50%;
+        height: 50%;
+        width: 50%;
 }
