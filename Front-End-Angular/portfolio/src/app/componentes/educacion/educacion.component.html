@@ -1,53 +1,25 @@
 <section>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-3">            
-                <div class="institucion-card">
-                    <img class="institucion-imagen" src="https://yt3.ggpht.com/9upo5zbtXzvItj8IMHF1X9hI95x4YOeGCApLk1DhMQCHftmJvf2GWmbJXrC1TKCrn-AyQ2txBw=s900-c-k-c0x00ffffff-no-rj" alt="">
-                    
-                </div>
-            </div>
-            <div class="col-9">
-                <h5 class="card-title"><!-- foto arg.prog pc-->Argentina Programa</h5><!-- icono pc -->
-            </div>
+    <div class="container-fluid"> 
+        <h5 class="card-title">Formación Académica</h5>       
+        <div *ngFor="let educacion of listaEducacion">
             <div class="row">
-                <div class="col">
-                    <p>Desarrollador Web Full-Stack</p>
-                    <p>Febrero 2022 - Agosto 2022</p>
+                <div class="col-3">
+                    <div class="institucion-card">
+                        <a [hreflang]="educacion.link">
+                            <img class="institucion-imagen" [src]="educacion.imagen">
+                        </a>
+                    </div>
                 </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">            
-                <div class="item-card">
-                    <img class="item-imagen" src="https://pbs.twimg.com/profile_images/1519481332182794240/cGxnW1lg_400x400.jpg" alt="">
+                <div class="col-9">
+                    <div class="card-title">
+                        <h5>{{educacion.institucion}}</h5>
+                    </div>
+                    <div class="card-text">
+                        <p>{{educacion.titulo}}</p>
+                        <small>{{educacion.inicio}} {{educacion.fin}}</small>
+                    </div>           
                 </div>
-            </div>
-            <div class="col-9">
-                <h5 class="card-title">Universidad Nacional de Lomas de Zamora (UNLZ)</h5>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>Profesorado en Comunicación Social</p>
-                    <p>Febrero 2019 - Actualidad</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-3">            
-                <div class="item-card">
-                    <img class="item-imagen" src="https://pbs.twimg.com/profile_images/1519481332182794240/cGxnW1lg_400x400.jpg" alt="">
-                </div>
-            </div>
-            <div class="col-9">
-                <h5 class="card-title">Universidad Nacional de Lomas de Zamora (UNLZ)</h5>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <p>Licenciado en Periodismo</p>
-                    <p>Febrero 2012 - Junio 2022</p>
-                </div>
-            </div>
+            </div>        
         </div>
     </div>
 </section>

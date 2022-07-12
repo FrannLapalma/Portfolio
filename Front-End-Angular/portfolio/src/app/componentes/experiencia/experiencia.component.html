@@ -1,0 +1,25 @@
+<section>
+    <div class="container-fluid">
+        <h5 class="card-title">Experiencia Laboral</h5>
+        <div *ngFor="let trabajo of listaExperiencia">
+            <div class="row">
+                <div class="col-3">
+                    <div class="institucion-card">
+                        <a [hreflang]="trabajo.link">
+                            <img class="institucion-imagen" [src]="trabajo.imagen">
+                        </a>
+                    </div>
+                </div>                
+                <div class="col-9">
+                    <div class="card-title">
+                        <h5>{{trabajo.empresa}}</h5>
+                    </div>
+                    <div class="card-text">
+                        <p>{{trabajo.cargo}}</p>
+                        <small>{{trabajo.periodo}}</small>
+                    </div>   
+                </div>         
+            </div>        
+        </div>
+    </div>
+</section>

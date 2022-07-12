@@ -13,6 +13,9 @@ body {
 .row {
     margin: auto;
     display: flex;
+    justify-content: center;
+    margin:5px;
+    padding: 5px;
 }
 .banner{
     background-size: 25%;
@@ -32,11 +35,6 @@ body {
         border-radius: 50%;
         height: 100%;
         width: 100%;
-}
-.row {
-    justify-content: center;
-    margin:5px;
-    padding: 5px;
 }
 .card-body-perfil{
     justify-content: center;
@@ -63,10 +61,8 @@ body {
 }
 .institucion-card {
     border-radius: 50%;
-    height: 10em;
-    width: 10em;
-    margin: 0px;
-    padding: 0px;
+    height: 8em;
+    width: 8em;
 }
 .institucion-imagen {
         border-radius: 50%;
